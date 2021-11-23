@@ -19,10 +19,12 @@
                 </div>
 
                 <div class="right-header">
-                        <form method="get"  autocomplete="off" id="search-form">
+                        <form method="get" action="http://google.com/search" autocomplete="off" id="search-form">
                            <div class="search-div">
-                            <input type="search"  id="main-search" placeholder="Search">
-                            
+                            <input type="search" name="q" id="main-search" placeholder="Search">
+                            <button class="submit" id="search-submit">
+                                <i class="fas fa-search" style="color: white;" ></i>
+                            </button>
                            </div>
                         </form>
 
