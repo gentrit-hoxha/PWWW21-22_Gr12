@@ -1,0 +1,283 @@
+/*
+ The start of the css styling 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300&display=swap');
+      
+*{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.first-part {
+   height: fit-content;
+   padding-bottom: 2rem !important;
+   color: white;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: rgba(40,40,40,255);
+}
+
+
+
+header {
+  max-width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content1 {
+  display: block;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+ font-size: 3em;
+ padding: 0.5em 0.5em 0.2em 0.1em;
+ cursor: pointer;
+}
+
+.logo-description {
+  margin-left: 0.5em;
+}
+
+#main-search {
+ margin: 2em 0em 0.75em 2em;
+ width: 250px;
+ height: 35px;
+ border-radius: 20px;
+ background-color: rgba(74,74,74,255);
+ color: white;
+ border: none;
+}
+
+input[type='search']{
+ font-size: 1em;
+
+ padding: 16px;
+}
+
+.header-links {
+ margin-left: 50px;
+}
+
+a:hover {
+ background-color: cornflowerblue;
+ color: black;
+ padding: 0.5em;
+ transition: 0.2s;
+}
+
+.right-header p {
+ color: white;
+}
+
+a {
+ text-decoration: none;
+ color: white;
+}
+
+#search-form{
+display: flex;
+align-items: center;
+} 
+
+.fa-search {
+    
+    
+    position: absolute;
+    top: 48px;
+    right: 42.5vh;
+  }
+
+#search-submit {
+   margin-top: 2em;
+
+   border: none;        
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Slider Part */
+
+.slider {
+   margin-top: 20px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 10px;
+   transition: 1s;
+   width: 950px;
+   height: 340px;
+   overflow: hidden;
+}
+
+.slide {
+   width: 20%;
+   transition: 1s;
+}
+
+.slides {
+   width: 500%;
+   height: 340px;
+   display: flex;
+}
+
+.slides input {
+   display: none;
+}
+
+.navigation-manual {
+   height:  20px;
+   margin-top: -30px;
+     display: flex;
+     justify-content: center;
+}
+
+.manual-btn {
+   border: 2px solid #40D3DC ;
+   
+   width: 13px;
+   height: 13px;
+   border-radius: 10px;
+   cursor: pointer ;
+   transition: 1s ;
+   margin-right: 40px;
+}
+
+.manual-btn:hover {
+   background-color: #40D3DC;
+   transition: 0.1s;
+}
+
+#radio1:checked ~ .first {
+   margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+   margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+   margin-left: -40%;
+}
+
+
+#radio4:checked ~ .first {
+   margin-left: -60%;
+}
+
+/*Navigation Links
+down to the image slider
+*/
+
+.navigation-links {
+   max-width: 950px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 1.5rem;      
+   background-color: blueviolet;
+}
+
+ul li{
+   list-style-type: none;
+   cursor: pointer;
+   padding: 1.2rem;
+}
+
+li:hover {
+   background-color: cadetblue;
+   transition: 0.25s;
+}
+ul {
+   
+   display: flex;
+}
+
+  /**/
+  
+  .second-part-content {
+      width: 950px;
+      
+      margin-left: auto;
+      margin-right: auto;
+
+      display: grid;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      
+  }
+
+  .item1 {
+     padding: 1rem;
+      margin: 10px;
+
+      box-shadow: -1px 1px 12px -2px rgba(0,0,0,0.65);
+     -webkit-box-shadow: -1px 1px 12px -2px rgba(0,0,0,0.65);
+     -moz-box-shadow: -1px 1px 12px -2px rgba(0,0,0,0.65);
+  }
+
+  .house1 {
+      display: block;
+      margin-left: -0.45rem;
+  }
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .right-header {
+      display: none;
+  }
+
+  header {
+      max-width: 600px;
+      width: 100%;
+  }
+
+  .content1 {
+      width: 600px !important;
+  }
+
+  img {
+      max-width: 585px;
+      width: 100%;
+  }
+
+  .slider {
+   max-width: 600px;
+   width: 100%;
+   height: auto;
+  }
+
+  ul {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .second-part-content {
+      max-width: fit-content;
+      background-color: aqua;
+      grid-template-columns: 100%;
+  }
+
+  
+}
+
+
+.link-continue-reading {
+    all: initial !important;
+    color: blue !important;
+    cursor: pointer !important;
+}
