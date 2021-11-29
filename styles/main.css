@@ -2,8 +2,7 @@
  The start of the css styling 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300&display=swap');
-      
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Poppins:wght@200&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300&display=swap');      
 *{ 
     font-family: 'Times New Roman', Times, serif;
     font-family: Helvetica, sans-serif;
@@ -69,10 +68,10 @@ input[type='search']{
 }
 
 a:hover {
- background-color: cornflowerblue;
  color: black;
- padding: 0.5em;
- transition: 0.2s;
+ background-color: thistle;
+ padding: 0.30rem;
+ transition: 0.25s;
 }
 
 .right-header p {
@@ -210,7 +209,7 @@ ul {
   
   .second-part-content {
       width: 950px;
-      
+      margin: 2rem 0 2rem 0;
       margin-left: auto;
       margin-right: auto;
 
@@ -274,3 +273,174 @@ ul {
     color: blue !important;
     cursor: pointer !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Designing the third part of the first page */
+
+.third-part {
+  
+}
+
+.third-part-content {
+   width: 970px;
+   margin-left: auto;
+   margin-right: auto;
+   display: grid;
+   justify-content: center;
+   grid-template-columns: 50% 50%;
+   
+}
+
+.third-part-item1 {
+   padding: 2rem;
+   color: black !important;
+   
+}
+
+.third-part-item1 > h1 {
+   font-size: 30px;
+   padding-bottom: 0.5rem;
+   
+}
+
+.third-part-item1 > .author{
+    font-size: 20px;
+    padding-bottom: 1.5rem;
+
+}
+
+.author-message {
+   height: 180px;
+  
+}
+
+.third-part-photos{
+     height: 200px
+}
+
+
+.third-part-photos {
+   text-align: center;
+}
+
+.third-part-item2 {
+   padding: 2rem 0 2rem 0rem;
+   
+}
+
+.third-part-item2 > h1 {
+   font-size: 30px;
+   font-style: italic;
+}
+
+
+
+
+
+/**Designing the footer of the first page*/
+
+.footer {
+   font-family: 'Zen Maru Gothic', sans-serif !important;
+}
+
+.footer-content {
+   width: 970px;
+   height: 440px;
+   margin-left: auto;
+   margin-right: auto;
+   display: grid;
+   grid-template-columns: 50% 25% 25%;
+   background-color: gray;
+   margin-bottom: 2rem;
+   
+   
+}
+
+.about-us {
+  
+   margin: 0.5rem;
+}
+
+.our-skillset {
+   
+   margin: 0.5rem;
+}
+
+.blog-links {
+   
+   margin: 0.5rem;
+}
+
+
+.skillset1 {
+   padding: 0.75rem 0.5rem 0.2rem 0.5rem;
+   border-bottom: thin solid white;
+   color: white;
+}
+
+.about-us-1:nth-of-type(2){
+   padding-top: 1.5rem;}
+
+.about-us-1>p {
+          padding: 0.75rem 0 1rem 1rem;
+}
+
+
+.about-us-1-img {
+   width: 175px;
+   float: left;
+   padding: 0 0.5rem;
+}
+
+
+
