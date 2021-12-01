@@ -399,7 +399,16 @@ ul {
    padding: 0 0.5rem;
 }
 
-
+.copyright {
+   width: 970px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #474747;
+   color: white;
+   justify-content: space-between;
+   padding: 1rem;
+   display: flex;
+}
 
 
 
