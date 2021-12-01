@@ -286,7 +286,8 @@ ul {
 
 /*The design of third part of the page */
 
-.third-part { 
+.third-part {
+    
 }
 
 .third-part-content {
@@ -399,16 +400,7 @@ ul {
    padding: 0 0.5rem;
 }
 
-.copyright {
-   width: 970px;
-   margin-left: auto;
-   margin-right: auto;
-   background-color: #474747;
-   color: white;
-   justify-content: space-between;
-   padding: 1rem;
-   display: flex;
-}
+
 
 
 
