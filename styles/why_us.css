@@ -1,0 +1,17 @@
+
+@import url(main.css);
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Luckiest+Guy&family=Maven+Pro&family=Poppins:wght@200&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300&display=swap');.why-part-content {
+    width: 950px;
+      
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.event-timeline-title {
+    margin-top: 3rem;
+    font-family: 'Hammersmith One', sans-serif;
+    text-align: center;
+}
+
+
+
