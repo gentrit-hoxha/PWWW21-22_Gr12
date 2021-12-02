@@ -200,8 +200,8 @@ li:hover {
    background-color: cadetblue;
    transition: 0.25s;
 }
+
 ul {
-   
    display: flex;
 }
 
