@@ -13,3 +13,43 @@
     text-align: center;
 }
 
+ul {
+    all: unset !important;
+}
+
+
+ul li:nth-child(even) {
+    list-style-type: disc  !important;
+}
+
+ul li:nth-child(odd) {
+   list-style-type: square  !important;
+
+}
+
+
+
+li:hover {
+    background-color: white;
+    transition: 0;
+}
+
+.step {
+    padding-bottom: 0.5rem;
+}
+
+ol {
+   width: 900px;
+   margin: 0 auto;
+    list-style-type: upper-roman;
+    margin-top: 1rem;
+    margin-bottom: 1rem !important;
+}
+
+
+.steps2 {
+   margin: 0 0 0 4rem !important;
+   list-style-type: decimal;
+   margin-left: 1rem;
+}
+
