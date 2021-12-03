@@ -4,9 +4,272 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables in the project</title>
+    <link rel="stylesheet" href="styles/why_us.css">
+    <title>Tables </title>
+    <style>
+        h1, p {
+            text-align: center;
+        }
+
+        dl {
+            margin-top: 2rem;
+        }
+
+        dt {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        dd {
+            margin-left: 2rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+
+    
+    <div class="first-part">
+         
+        <div class="content1">
+            <header>
+                <div class="left-header">
+                     <p id="logo">SMASHING</p> 
+                     <p class="logo-description">Free PSD Website Template</p>
+                </div>
+
+                <div class="right-header">
+                        <form method="get" action="http://google.com/search" autocomplete="off" id="search-form">
+                           <div class="search-div">
+                            <input type="search" name="q" id="main-search" placeholder="Search">
+                            <button class="submit" id="search-submit">
+                                <i class="fas fa-search" style="color: white;" ></i>
+                            </button>
+                           </div>
+                        </form>
+
+                        <nav>
+                            <p class="header-links">
+                                   <a href="#">Contact Us</a> &nbsp; | 
+                                   <a href="">Sign In</a>  &nbsp; |
+                                   <a href="">Sign Out</a>
+                            </p>
+
+                        </nav>
+                </div>
+        </header>
+    </div> 
+</div>
+
+   
+
+
+
+
+    <h1>The database of the products </h1>
+
+    <table id="customers">
+      <tr>
+        <th>ID</th>
+        <th >Continent</th>
+        <th>State</th>
+        <th>Houses to Buy</th>
+        <th>Houses for Rent</th>
+        <th>Apertments to Buy</th>
+        <th>Apertments for Rent</th>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td rowspan="5">USA</td>
+        <td>Las Vegas</td>
+        <td>422</td>
+        <td>436</td>
+        <td>545</td>
+        <td>365</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        
+        <td>Atlanta</td>
+        <td>705</td>
+        <td>601</td>
+        <td>413</td>
+        <td>613</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Chicago</td>
+        <td>505</td>
+        <td>210</td>
+        <td>908</td>
+        <td>301</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Houston</td>
+        <td>560</td>
+        <td>230</td>
+        <td>762</td>
+        <td>905</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Orlando</td>
+        <td>230</td>
+        <td>310</td>
+        <td>423</td>
+        <td>125</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td rowspan="2">France</td>
+        <td>Paris</td>
+        <td>560</td>
+        <td>230</td>
+        <td>762</td>
+        <td>905</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Lyon</td>
+        <td>505</td>
+        <td>210</td>
+        <td>908</td>
+        <td>301</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td rowspan="3">Switerland</td>
+        <td>Zurich</td>
+        <td>705</td>
+        <td>601</td>
+        <td>413</td>
+        <td>613</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Basel</td>
+        <td>422</td>
+        <td>436</td>
+        <td>545</td>
+        <td>365</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Geneva</td>
+        <td>505</td>
+        <td>210</td>
+        <td>908</td>
+        <td>301</td>
+      </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+    <h1>The database of the Staff of the Company </h1>
+
+    <table id="customers">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Position</th>
+        <th>Annual Salary</th>
+        
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Gentrit</td>
+        <td>Hoxha</td>
+        <td>CEO</td>
+        <td>125000 &dollar;</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Zenit</td>
+        <td>Neziri</td>
+        <td>Project Manager</td>
+        <td>100000 &dollar;</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Jetmir</td>
+        <td>Halili</td>
+        <td>Team Leader </td>
+        <td>98000 &dollar;</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Jude</td>
+        <td>Spence</td>
+        <td>Software Engineer</td>
+        <td>110000&dollar;</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Mathilde</td>
+        <td>Moore</td>
+        <td>Software Engineer</td>
+        <td>116510&dollar;</td>
+      </tr>
+      <tr>
+        <td>1</td>
+
+        <td>Patryk </td>
+        <td>Wiley</td>
+        <td>Software Engineer</td>
+        <td>116510&dollar;</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Marilyn </td>
+        <td>Almond</td>
+        <td>Agent</td>
+        <td>75000 &dollar;</td>
+      </tr>
+      <tr>
+        <td>1</td>
+
+        <td>Miyah </td>
+        <td>Corbett</td>
+        <td>Agent</td>
+        <td>75000 &dollar;</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Dario </td>
+        <td>Decker</td>
+        <td>Agent</td>
+        <td>75000 &dollar;</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Samuel </td>
+        <td>Nolan</td>
+        <td>IT and Database Administrator</td>
+        <td>114000 &dollar;</td>
+      </tr>
+    </table>
+
+
+
+
+
+
+
+    <div class="copyright">
+            <p>copyright &copy; 2013 Domain Name - All Rights Reserved</p>
+            <p>Template by OS Templates</p>
+    </div>
     
 </body>
 </html>
