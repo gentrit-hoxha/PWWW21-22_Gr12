@@ -13,3 +13,80 @@
     text-align: center;
 }
 
+ul {
+    all: unset !important;
+}
+
+
+ul li:nth-child(even) {
+    list-style-type: disc  !important;
+}
+
+ul li:nth-child(odd) {
+   list-style-type: square  !important;
+
+}
+
+
+
+li:hover {
+    background-color: white;
+    transition: 0;
+}
+
+.step {
+    padding-bottom: 0.5rem;
+}
+
+ol {
+   width: 900px;
+   margin: 0 auto;
+    list-style-type: upper-roman;
+    margin-top: 1rem;
+    margin-bottom: 1rem !important;
+}
+
+
+.steps2 {
+   margin: 0 0 0 4rem !important;
+   list-style-type: decimal;
+   margin-left: 1rem;
+}
+
+/*Tables design*/
+
+#mainTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-radius: 0.2rem;
+    
+    max-width: 980px;
+    margin: 1.2rem auto 2.4em auto;
+    width: 100%;
+  }
+  
+  #mainTable td, #mainTable th {
+    border: 1px solid #ddd;
+    border-bottom: thin solid black;
+    padding: 8px;
+  }
+  
+  #mainTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #mainTable tr:hover {background-color: #ddd;}
+  
+  #mainTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  span {
+      text-transform: uppercase;
+      
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5rem;
+  }
+
