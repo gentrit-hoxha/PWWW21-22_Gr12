@@ -18,7 +18,12 @@
    display: block;
    margin-left: auto;
    margin-right: auto;
-   background-color: rgba(40,40,40,255);
+   background: #A6B16A;
+   background: #6AB172;
+   background: -webkit-radial-gradient(bottom right, #6AB172, #011A49);
+   background: -moz-radial-gradient(bottom right, #6AB172, #011A49);
+   background: radial-gradient(to top left, #6AB172, #011A49);
+   
 }
 
 
@@ -52,7 +57,7 @@ header {
  width: 250px;
  height: 35px;
  border-radius: 20px;
- background-color: rgba(74,74,74,255);
+ 
  color: white;
  border: none;
 }
@@ -90,7 +95,7 @@ align-items: center;
 
 .fa-search {
     
-    
+    color: black !important;
     position: relative;
     top: -2px;
     right: 25px;
@@ -98,7 +103,7 @@ align-items: center;
 
 #search-submit {
    margin-top: 2em;
-   background-color: black !important;
+   background-color: transparent !important;
    border: none;        
 }
 
@@ -230,17 +235,24 @@ ul {
      -moz-box-shadow: -1px 1px 12px -2px rgba(0,0,0,0.65);
   }
 
+   #card-image {
+      height: 220px ;
+   }
  
   .house1, .house2, .house3{
-     height: 220px;
    background-image: url("../images/house1.jpg");
-   background-repeat: no-repeat;
-   
+   background-repeat: no-repeat; 
    background-position: center;
+   background-attachment: scroll;
+   background-origin: border-box;
    background-size: cover;
 
   }
 
+
+  .house2 {
+     
+  }
 
 
 
@@ -362,9 +374,12 @@ ul {
    margin-right: auto;
    display: grid;
    grid-template-columns: 50% 25% 25%;
-   background-color: gray;
+
+
+   background:  url(../images/logo.png) bottom right no-repeat , url(../images/solid1.jpg)  top left no-repeat ;
+  background-size: 150px, 100% !important;
    
-   
+  
 }
 
 .about-us {
@@ -383,10 +398,15 @@ ul {
 }
 
 
-.skillset1 {
+.skillset1  {
+
    padding: 0.75rem 0.5rem 0.2rem 0.5rem;
    border-bottom: thin solid white;
-   color: white;
+   color:   black !important;
+}
+
+.skillset1 a {
+   color: black;
 }
 
 .about-us-1:nth-of-type(2){
@@ -407,18 +427,17 @@ ul {
    width: 970px;
    margin-left: auto;
    margin-right: auto;
-   background-color: #474747;
    color: white;
    justify-content: space-between;
    padding: 1rem;
    display: flex;
+
+
+   background-image: linear-gradient(to right, #141e30, #243b55);
+
+
+
 }
-
-
-
-
-
-
 
 .button-1 {
    margin-left:67% !important;
@@ -436,9 +455,9 @@ ul {
 
   border-radius: 5px;
   box-shadow: 3px 5px #888888;
+  border: 5px solid transparent;
+  border-image: url(../images/border-image.png) 30 round;
   
-  border: 10px solid transparent;
-  border-image: url(../images/tuxpi.com.1639147042.jpg) 30 round;
   cursor: pointer;
 }
 
@@ -480,6 +499,16 @@ ul {
    cursor: pointer;
    text-shadow: 1px -1px 8px #550DCE;
    text-transform: uppercase;
+}
+
+
+.card-title {
+   padding-bottom: 1rem; 
+   word-wrap: break-word;
+}
+
+.emailto {
+   all: unset !important;
 }
 
 
