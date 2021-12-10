@@ -424,20 +424,63 @@ ul {
    margin-left:67% !important;
    margin-top: 20px !important;
    width: fit-content;
-   background-color: #2179c2;
+   
   border: none;
-  color: white;
-  padding: 15px 32px;
+  color: black;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+
+  border-radius: 5px;
+  box-shadow: 3px 5px #888888;
+  
+  border: 10px solid transparent;
+  border-image: url(../images/tuxpi.com.1639147042.jpg) 30 round;
   cursor: pointer;
 }
 
 
+.price-label {
+   font-size: 1.4rem;
+   font-style: italic;
+   padding: 0.5rem 0 0.2rem 0;
+}
 
+
+.price-tag {
+   font-weight: bold;
+   font-size: 2rem;
+   font-style: normal;
+}
+
+.address-label, .room-label, .bathroom-label, .sqft-label, .mailto-label {
+   padding: 0.5rem;
+   font-weight: bold;
+   border-bottom: 1px solid black;
+}
+
+@font-face{
+   font-family: roboto;
+   src: url('../fonts/roboto/Roboto-Thin.ttf') ;
+
+}
+
+.address-tag, .room-tag, .bathroom-tag, .sqft-tag {
+   font-family: roboto;
+   font-size: 1.2rem;
+   color: black;
+   font-weight: bold;
+}
+
+.mailto-label {
+   margin: 0.5rem;
+   cursor: pointer;
+   text-shadow: 1px -1px 8px #550DCE;
+   text-transform: uppercase;
+}
 
 
 
