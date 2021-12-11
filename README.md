@@ -12,6 +12,6 @@ In this repository we have placed the entire code and sources for the project
 
 ## Project is Hosted Online
 
-We have hosted the project online with the platform Netlify, Below you can click and go to the page
+We have hosted the project online with the platform Netlify, Below you can click and go to the page to visit how it looks on real world when others vist
 
  - [click here to Find the project](https://projektiwww12.netlify.app)
