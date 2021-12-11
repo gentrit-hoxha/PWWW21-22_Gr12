@@ -1,0 +1,100 @@
+@import url(main.css);
+
+.team-part-content {
+    width: 1000px;
+    margin: 2rem 0 2rem 0;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+
+.column {
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+   padding: 0 16px;
+}
+
+
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+#team-photo {
+    height: 250px;
+}
+
+.card {
+    height: 450px;
+}
+
+.features_pic1, .features_pic2, .features_pic3{
+ background-image: url("../images/features/landing-feature-01.jpg");
+ background-repeat: no-repeat; 
+ background-position: center;
+ background-attachment: scroll;
+ background-origin: border-box;
+ background-size: cover;
+
+}
+
+
+.features_pic3 {
+    background-image: url("../images/features/landing-feature-03.jpg");
+}
+
+
+.features_pic4 {
+    background-image: url("../images/features/landing-feature-04.jpg");
+}
+
+
+.features_pic5 {
+    background-image: url("../images/features/landing-feature-05.jpg");
+}
+
+
+.features_pic6 {
+    background-image: url("../images/features/landing-feature-06.jpg");
+}
+
+
+
+.card h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card p {
+    text-align: center;
+    padding: 1rem;
+}
+
