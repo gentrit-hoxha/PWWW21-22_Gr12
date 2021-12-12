@@ -111,3 +111,28 @@
     cursor: pointer;
 }
 
+#card3:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+#card4:hover {
+    cursor: pointer;
+    transform: skew(.05rad);
+    transition: 0.5s;
+}
+
+#card5:hover {
+    cursor: pointer;
+    transform: rotateX(3.142rad);
+    transition: 0.5s;
+}
+
+#card6:hover {
+    cursor: pointer;
+    transform: rotateY(3.142rad);
+    transition: 0.5s;
+}
+
+
