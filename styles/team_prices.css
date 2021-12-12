@@ -94,7 +94,20 @@
 }
 
 .card p {
+
     text-align: center;
     padding: 1rem;
+}
+
+#card1:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#card2:hover {
+    transform: translateY(-10px);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
