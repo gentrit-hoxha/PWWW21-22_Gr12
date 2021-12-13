@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Register a Property</title>
+</head>
+<body>
+    <div id="main">
+        <div id="sub-main">                
+                <form  id="survey-form" autocomplete="on">
+                    
+                    <div class="survey-content" style="margin-top: 5rem;">
+                        <h1 class="login-title" id="title" style="padding-bottom: 0rem !important;">Register A property</h1>
+                        
+                        <label id="name-label" for="name"><b>Name of Owner:</b></label>
+                        <input type="text" id="name" name="full Name" placeholder="Enter your full Name" required><br>
+
+                        <label id="adress-label" for="address"><b>Adress:</b></label>
+                        <input type="text" id="address" name="address" placeholder="Enter the address" required><br>
+                        
+                        <label id="state-label" for="state"><b>State:</b></label>
+                        <select name="state" id="state">
+                                <option  disabled selected>Choose The State</option>
+                                <optgroup label="USA">
+                                    <option value="Las-Vegas">Las Vegas</option>
+                                    <option value="new-york">New York</option>
+                                    <option value="washington">Washinton D.C</option>
+                                </optgroup>
+
+                                <optgroup label="Switerland">
+                                    <option value="zurich">Zurich</option>
+                                    <option value="basel">Basel</option>
+                                    <option value="luzern">Luzern</option>
+                                    <option value="geneva">Geneva</option>
+                            </optgroup>
+                        </select>
+
+                        <label id="main-category-label" for="state"><b>What you want to Register:</b></label>
+                        <select name="main-category" id="main-category">
+                            <option  disabled selected>Choose The category</option>
+                            <option value="house-sale">House for Sale</option>
+                            <option value="house-rent">House for Rent</option>
+                            <option value="apartment-sale">Apartment for Sale</option>
+                            <option value="apartment-rent">Apartment for Rent</option>
+                        </select>
+                        
+                        
+                        <label for="no-rooms"><b>Number of Rooms:</b></label>
+                        <input type="number" name="no-rooms" min="1" max="10" id="no-rooms" placeholder="Enter the number of rooms..">
+
+                        <label for="no-bath-rooms"><b>Number of Bath Rooms:</b></label>
+                        <input type="number" name="no-bath-rooms" min="1" max="10" id="no-bath-rooms" placeholder="Enter the number of bath rooms..">
+
+                        <label for="sq-foot"><b>Square Foot of the property:</b></label>
+                        <input type="number" name="sq-foot" min="1" max="10" id="sq-foot" placeholder="Enter the square foot of the property..">
+
+
+                        <label id="message-label" for="message"><b>Description :</b></label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Please enter any specific information that is related with the property ......"></textarea>
+                                                
+                
+                        <input type="submit" id="submit" value="Register the Property" name="register-property">
+                </div>
+
+                </form>
+                
+                
+                <p id="footer"><b><em>Copyright &copy; PWWW21-22-GR12 2021 / 2022</em></b></p>
+
+      </div>
+
+ </div>
+     
+</body>
+</html>
