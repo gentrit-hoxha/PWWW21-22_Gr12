@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas Example</title>
-    
+    <style>
+        button {
+            position: absolute;
+            top: 18rem;
+            border: none;
+            background-color: cadetblue;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            right: 8rem;
+            cursor: pointer;
+        }
+        </style>    
         
 </head>
 <body>
     
     
     <h1>Canvas Examples</h1>
-    
+    <button id="butoni" onclick="myCanvas()">Paste the the Image to the next div</button>
     
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
         The browser doesn't support HTML canvas tag.
@@ -37,6 +49,10 @@
     <canvas id="myCanvas6" width="300" height="250" style="border:1px solid #000000;">
         The browser doesn't support HTML canvas tag.
     </canvas>
+
+    <img id="house" src="../images/house1.jpg" alt="" width="400" height="280">
+    
+    <canvas id="myCanvas7" width="1200" height="840" style="border:1px solid black;">
 
 
         
@@ -96,7 +112,18 @@
             ctx6.fillRect(10, 10, 500, 200);
 
            
+            function myCanvas() {
 
+                var c7 = document.getElementById("myCanvas7");
+                var ctx7 = c7.getContext("2d");
+                var img = document.getElementById("house");
+                ctx7.drawImage(img,20,20);
+
+                }
+
+
+                var button = document.getElementById('butoni');
+                button.addEventListener('click', myCanvas);
        </script>
 </body>
 </html>
