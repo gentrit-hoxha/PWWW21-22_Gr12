@@ -10,16 +10,19 @@
 <body>
     <div id="main">
         <div id="sub-main">                
-                <form  id="survey-form" autocomplete="on">
+                <form  id="login-form" autocomplete="on">
                     
                     <div class="survey-content">
                         <h1 class="login-title" id="title">Login Into the System </h1>
                         
-                        <label id="name-label" for="username"><b>Username or Email:</b></label>
-                        <input type="email" id="username" name="email" placeholder="Enter your Mail" required><br>
+                        <label id="name-label" for="login-username"><b>Username or Email:</b></label>
+                        <input type="email" id="login-username" name="email" placeholder="Enter your Mail">
+                        <small id="small1" class="no">Message Error for the Username</small>
+
                     
-                        <label id="pasword-label" for="password">Password:</label><br>
-                        <input type="password" id="password" name="password" placeholder="Enter your password" required> <br>
+                        <label id="pasword-label" for="login-password"><b>Password:</b></label><br>
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password" > 
+                        <small id="small1" class="no" >Message Error for the Password field</small>
                 
                         <input type="submit" id="submit" name="login" value="LOGIN">
                 </div>
@@ -33,5 +36,6 @@
 
  </div>
      
+ <script src="../js/formValidation.js"></script>
 </body>
 </html>

@@ -38,7 +38,7 @@
     padding-bottom: 2rem;
  }
 
- #survey-form {
+ #login-form, #sign-up-form, #contact-form, #register-property {
      display: block;
      margin: 0 auto;
   
@@ -65,7 +65,7 @@
  .survey-content {
      color: white;
      padding: 0rem 3rem 3rem 3rem;
-     background-color: rgba(44, 44, 76, 0.78);
+     background-color: rgba(44, 44, 76, 0.60);
  }
 
  #footer {
@@ -162,6 +162,37 @@
     
  }
 
+
+ 
+ .error {
+    border: 2px solid red;
+ }
+
+ .errorMsg {
+     color: red;
+     font-weight: bold;
+ }
+
+ .success {
+    border: 2px solid rgb(0, 255, 0);
+ }
+
+ .successMsg {
+    color: rgb(0, 255, 0);
+     font-weight: bold;
+ }
+
+ small {
+     margin: -1rem  0 0.7rem 0 !important;
+ }
+
+ .yes{
+    display: block;
+}
+
+    .no{
+        display: none;
+    }
 
 
 
