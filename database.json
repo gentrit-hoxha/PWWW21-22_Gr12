@@ -1,0 +1,94 @@
+[
+    { 
+        "title":"House for Sale",
+        "sourceImage": "../images/house1.jpg",
+        "price": "225831",
+        "address": "305 ROYAL OAK DR, BEL AIR, MD 21015",
+        "room": "4",
+        "bathroom": "2",
+        "sqft": "1758",
+        "email": "gentrit.hoxha2001@gmail.com"
+        
+        
+        
+    },
+    
+    { 
+        "title":"House for Rent",
+        "sourceImage": "../images/apartment1.jpg",
+        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
+        "price": "75486",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+
+    ,
+    
+    { 
+        "title":"House for Rent",
+        "sourceImage": "../images/slider_img_!.jpg",
+        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
+        "price": "75486",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+
+    ,
+    
+    { 
+        "title":"House for Rent",
+        "sourceImage": "../images/slider_img_2.jpg",
+        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
+        "price": "75486",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+
+    ,
+    
+    { 
+        "title":"House for Rent",
+        "sourceImage": "../images/slider_img_3.jpg",
+        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
+        "price": "75486",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+
+    ,
+    
+    { 
+        "title":"House for Rent",
+        "sourceImage": "../images/slider_img_4.jpg",
+        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
+        "price": "75486",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+
+    ,
+    
+    { 
+        "title":"House for Rent",
+        "sourceImage": "../images/apartment1.jpg",
+        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
+        "price": "75486",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+
+
+  ]
+
