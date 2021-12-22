@@ -30,7 +30,7 @@ function appendData(data){
       image.setAttribute("id", "card-image");
 
       
-      let srcc = data[i].sourceImage;
+     
       image.style.backgroundImage = "url('" + data[i].sourceImage + "')";
 
       let price = document.createElement('p');
