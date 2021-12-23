@@ -13,7 +13,15 @@
 
     <script>
 
-         localStorage.setItem("name", "Gentrit");
+
+        const dataForProject = {
+            "authors": ["Gentrit Hoxha", "Zenit Neziri","Jetmir Halili"],
+            "nameOfSubject": "Programming in WWWW",
+            "group": 19,
+
+        }
+
+         localStorage.setItem("dataForTheProject", JSON.stringify(dataForProject));
 
     </script>
 </body>
