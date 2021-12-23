@@ -14,23 +14,23 @@
     },
     
     { 
-        "title":"House for Rent",
+        "title":"Apartment for sale",
         "sourceImage": "../images/apartment1.jpg",
-        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
-        "price": "75486",
-        "room": "5",
+        "address": "8133 Leger Dr, Las Vegas, NV 89145",
+        "price": "234000",
+        "room": "2",
         "bathroom": "1",
         "sqft": "458",
-        "email": "gentrit.hoxha2001@gmail.com"
+        "email": "zenitneziri@gmail.com"
     }
 
     ,
     
     { 
-        "title":"House for Rent",
+        "title":"House for Sale",
         "sourceImage": "../images/slider_img_!.jpg",
-        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
-        "price": "75486",
+        "address": "2706 Forest Garden Dr, Kingwood, TX 77345",
+        "price": "31499",
         "room": "5",
         "bathroom": "1",
         "sqft": "458",
@@ -40,10 +40,10 @@
     ,
     
     { 
-        "title":"House for Rent",
+        "title":"Apartment for Rend",
         "sourceImage": "../images/slider_img_2.jpg",
-        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
-        "price": "75486",
+        "address": "429 Barkley Ct, Antioch, TN 37013",
+        "price": "564989",
         "room": "5",
         "bathroom": "1",
         "sqft": "458",
@@ -53,23 +53,23 @@
     ,
     
     { 
-        "title":"House for Rent",
+        "title":"Apartment for Sale",
         "sourceImage": "../images/slider_img_3.jpg",
-        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
-        "price": "75486",
+        "address": "210 Adam Ct, Tomball, TX 77375",
+        "price": "123654",
         "room": "5",
         "bathroom": "1",
         "sqft": "458",
-        "email": "gentrit.hoxha2001@gmail.com"
+        "email": "zenitneziri@gmail.com"
     }
 
     ,
     
     { 
-        "title":"House for Rent",
+        "title":"House for Sale",
         "sourceImage": "../images/slider_img_4.jpg",
-        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
-        "price": "75486",
+        "address": "15735 Braemar Cove Dr, Humble, TX 77346",
+        "price": "456783",
         "room": "5",
         "bathroom": "1",
         "sqft": "458",
@@ -79,16 +79,35 @@
     ,
     
     { 
-        "title":"House for Rent",
+        "title":"Apartment for Rent",
         "sourceImage": "../images/apartment1.jpg",
-        "address": "306 ROYAL OAK DR, BEL AIR, MD 21015",
+        "address": "22515 Acorn Valley Dr, Spring, TX 77389",
         "price": "75486",
         "room": "5",
         "bathroom": "1",
         "sqft": "458",
-        "email": "gentrit.hoxha2001@gmail.com"
+        "email": "zenitneziri@gmail.com"
     }
-
+,  { 
+    "title":"Apartment for Rent",
+    "sourceImage": "../images/apartment1.jpg",
+    "address": "22515 Acorn Valley Dr, Spring, TX 77389",
+    "price": "75486",
+    "room": "5",
+    "bathroom": "1",
+    "sqft": "458",
+    "email": "zenitneziri@gmail.com"
+},
+{ 
+    "title":"Apartment for Rent",
+    "sourceImage": "../images/apartment1.jpg",
+    "address": "22515 Acorn Valley Dr, Spring, TX 77389",
+    "price": "75486",
+    "room": "5",
+    "bathroom": "1",
+    "sqft": "458",
+    "email": "zenitneziri@gmail.com"
+}
 
   ]
 
