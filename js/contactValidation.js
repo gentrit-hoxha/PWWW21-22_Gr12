@@ -20,7 +20,44 @@ signUp.addEventListener('submit', (e) =>{
 
 
 
+function checkfirstName() {
+    const name_value = firstName.value;
+    if(name_value === '') {
+		setErrorFor(firstName, "Shenoni emrin tuaj nuk mund ta lini te zbrazet");
+    } 
+   
+    else if (name_value) {
+		setSuccessFor(firstName,"Në Rregull");
+    }
+}
 
+
+function checkLastName() {
+  const surname_value = lastName.value;
+
+  if (surname_value === "") {
+         setErrorFor(lastName, "Shenoni mbiemrin tuaj nuk mund ta lini zbrazet"); 
+  }
+  
+  else{
+           setSuccessFor(lastName, "Hapesira e mbiemrit eshte ne rregull");
+  }
+  
+}
+
+
+function checkMail() {
+    const email_value = contactEmail.value;
+    if(email_value === '') {
+		setErrorFor(contactEmail, "Shenoni emailin ne menyre korrekte, e.g username@domain.com");
+    } 
+    else if(!(email_value.includes(".com")||email_value.includes(".edu"))){
+      setErrorFor(contactEmail, "Ju duhet te dhenoni nje domain si: .com, .edu, .gov ose tjera");
+    }
+    else if (email_value) {
+		setSuccessFor(contactEmail,"Në Rregull");
+    }
+}
 
 
 function checkMessage() {
