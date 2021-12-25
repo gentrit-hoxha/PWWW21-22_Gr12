@@ -68,5 +68,6 @@ function setSuccessFor(input, message) {
 
      var small = formControl.nextElementSibling;
      small.textContent = message;
-     small.className = 'successMsg yes';
+     small.className = 'successMsg yes';  
 }
+
