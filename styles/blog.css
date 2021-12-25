@@ -137,8 +137,8 @@ article p {
 
 .close-modal{
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 0px;
+    right: 10px;
     border: none;
     font-size: 50px;
     font-weight: bolder;
@@ -148,7 +148,7 @@ article p {
 
 
 .modal{
-    width: 62%;
+    width: 950px;
     position: absolute;
     top: 180%;
     left: 50%;
