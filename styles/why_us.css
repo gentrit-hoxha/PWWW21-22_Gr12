@@ -90,3 +90,20 @@ ol {
       font-size: 1.5rem;
   }
 
+.most-frequent-questions button {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+  .question1, .question2, .question3, .question4, .question5 {
+      border: 1px solid black;
+      padding: 1rem 1rem 0.2rem 1rem;
+  }
+
+
+  .most-frequent-questions p {
+    display: none;
+}

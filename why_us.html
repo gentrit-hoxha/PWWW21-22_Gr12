@@ -5,6 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/why_us.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("#p1").hide();
+      });
+      $("#show").dblclick(function(){
+        $("#p1").show();
+      });
+
+      $("#show2").mouseenter(function(){
+          $("#p2").fadeIn("slow");
+        });
+
+        $("#hide2").click(function(){
+          $("#p2").fadeOut("3000");
+        });
+
+        $("#show3").click(function(){
+            $("#p3").animate({
+            height: 'toggle',
+            fontSize: "1.1em", 
+            borderWidth: "10px"
+            }, 1000);
+        });
+
+        $("#show4").click(function(){
+            $("#p4").slideToggle("slow");
+        });
+
+        $("button").click(function(){
+            $("p").hide(1000);
+            alert("The paragraph is now hidden");
+        });
+
+    });
+    </script>
     <title>Why you should choose us</title>
     <style>
         h1, p {
@@ -26,6 +63,15 @@
             margin-left: 2rem;
             font-family: 'Poppins', sans-serif;
             font-weight: bold;
+        }
+
+        #p3{
+            text-align: left;
+            background-color: lightseagreen;
+            color: white;
+            padding: 0 !important;
+            display: none;
+            padding: 1rem !important;
         }
     </style>
 </head>
@@ -147,12 +193,47 @@
                           <li class="step">Step 6: Close On Your Loan.</li>
                           
                       </ol>
+
+
+                      <h1>Most frequent questions</h1>
           
+
+                      
+                    <div class="most-frequent-questions">
+                        <div class="question1">
+
+                            <button id="show">Jquery show() dbl click</button>
+                            <button id="hide">jQuery hide()</button>
+                            <p  id="p1" style="text-align: left; display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim maxime culpa quod in labore magnam at suscipit et nesciunt omnis accusantium doloribus distinctio nulla harum incidunt esse, aspernatur unde officia.</p>
+                          </div>
+    
+                          <div class="question2">
+                            <button id="show2">jQuery fadeIn()</button>
+                            <button id="hide2">jQuery fadeOut()</button>
+                            <p  id="p2" style="text-align: left; display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim maxime culpa quod in labore magnam at suscipit et nesciunt omnis accusantium doloribus distinctio nulla harum incidunt esse, aspernatur unde officia.</p>
+                          </div>
+    
+                          <div class="question3">
+                            <button id="show3">jQuery animate() toogle</button>
+                            <p id="p3" ">Lorem ipsum dolor sit amet, consectetur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab explicabo dolorum saepe vitae iste, vero sapiente aliquid inventore quo, dolore, maiores blanditiis deleniti officiis quis asperiores. Itaque similique beatae maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, ducimus a minima omnis cum odio accusantium sequi officiis nam, esse ut optio corrupti vero laborum? Fugit ut deserunt corrupti est! adipisicing elit. Enim maxime culpa quod in labore magnam at suscipit et nesciunt omnis accusantium doloribus distinctio nulla harum incidunt esse, aspernatur unde officia.</p>
+                          </div>
+    
+                          <div class="question4">
+                            <button id="show4">jQuery slide()</button>
+                            <p id="p4" style="text-align: left; ">Lorem ipsum dolor  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsa aliquam magni excepturi, commodi, voluptatum eveniet explicabo possimus error velit ab? Est quas quisquam atque tempora quasi a id repellat? sit amet, consectetur adipisicing elit. Enim maxime culpa quod in labore magnam at suscipit et nesciunt omnis accusantium doloribus distinctio nulla harum incidunt esse, aspernatur unde officia.</p>
+                          </div>
+
+
+                          <div class="question5">
+                            <button id="show5">Hide all the content below</button>
+                            <p id="p5" style="text-align: left; display: block !important;">Lorem ipsum dolor  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsa aliquam magni excepturi, commodi, voluptatum eveniet explicabo possimus error velit ab? Est quas quisquam atque tempora quasi a id repellat? sit amet, consectetur adipisicing elit. Enim maxime culpa quod in labore magnam at suscipit et nesciunt omnis accusantium doloribus distinctio nulla harum incidunt esse, aspernatur unde officia.</p>
+                          </div>
+    
+                          
+                    </div>
    
         </div>
     </div>
-
-
 
 
     <div class="copyright">

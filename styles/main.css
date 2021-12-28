@@ -297,9 +297,11 @@ ul {
 
 
 .link-continue-reading {
+  
     all: initial !important;
-    color: blue !important;
+    color: blueviolet !important;
     cursor: pointer !important;
+
 }
 
 
