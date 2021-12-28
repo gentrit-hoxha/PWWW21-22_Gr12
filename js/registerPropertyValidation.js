@@ -9,6 +9,10 @@ const propertySqFoot = document.getElementById("sq-foot");
 const propertyDescription = document.getElementById("description");
 
 
+var maxNumber = Number.MAX_VALUE;
+
+console.log(maxNumber)
+
 registerProperty.addEventListener('submit', (e) =>{
     e.preventDefault();
     checkfirstName();
@@ -46,6 +50,7 @@ function checkProperty() {
 
 function checkRooms() {
     const propertyRoomValue = propertyRooms.value;
+    
     if(propertyRoomValue === '') {
 		setErrorFor(propertyRooms, "Shenoni numrin e dhomave");
     } 
@@ -66,6 +71,10 @@ function checkBathRooms() {
 		setErrorFor(propertyBathRooms, "Shenoni numrin e banjove");
     } 
 
+    else if (isNaN(propertyBathRoomValue)) {
+           setErrorFor(propertyBathRooms, "Ju nuk keni shenuar nje numer");
+    }
+
     else if(propertyBathRoomValue<0){
                   setErrorFor(propertyBathRooms, "Nuk mund te shenoni numer negativ");
     }
@@ -77,9 +86,14 @@ function checkBathRooms() {
 
 function checkSqFt() {
     const propertySqFootValue = propertySqFoot.value;
+
     if(propertySqFootValue === '') {
 		setErrorFor(propertySqFoot, "Shenoni numrin metrave katror");
     } 
+
+   else if (propertySqFootValue>Number.MAX_VALUE) {
+      setErrorFor(propertySqFoot, "Ky numer tejkalon maksimumin sa lejohet");
+    }
 
     else if(propertySqFootValue<0){
                   setErrorFor(propertySqFoot, "Nuk mund te shenoni numer negativ");

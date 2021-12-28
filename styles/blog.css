@@ -10,6 +10,7 @@
 article {
     border: 1px solid black;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 article h2 {
@@ -188,6 +189,12 @@ article p {
 
 
 
+
+  .night {
+      background-color: black;
+      color: white;
+      border: 2px solid white;
+  }
 
 
 

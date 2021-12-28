@@ -35,11 +35,27 @@
             $("#p4").slideToggle("slow");
         });
 
-        $("button").click(function(){
-            $("p").hide(1000);
+        $("#show5").click(function(){
+            $("#p5").hide(1000);
             alert("The paragraph is now hidden");
         });
 
+        $("#show6").click(function(){
+            $("#link6").attr("href", "https://projektiwww12.netlify.app/");
+            $("#link6").text("Link changed source");
+        });
+
+        $("#showlink6").click(function(){
+            alert($("#link6").attr("href"));
+        });
+
+        $(".question7").append( "<button id='show7'>Using show and append jQuery() and remove()</button>");
+        $(".question7").append( "<h4 id='p7'> Lorem Ipsum  Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</h4>");
+
+
+        $("#show7").click(function(){
+            $("#p7").remove();
+        });
     });
     </script>
     <title>Why you should choose us</title>
@@ -228,9 +244,27 @@
                             <button id="show5">Hide all the content below</button>
                             <p id="p5" style="text-align: left; display: block !important;">Lorem ipsum dolor  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsa aliquam magni excepturi, commodi, voluptatum eveniet explicabo possimus error velit ab? Est quas quisquam atque tempora quasi a id repellat? sit amet, consectetur adipisicing elit. Enim maxime culpa quod in labore magnam at suscipit et nesciunt omnis accusantium doloribus distinctio nulla harum incidunt esse, aspernatur unde officia.</p>
                           </div>
-    
-                          
-                    </div>
+
+                          <div class="question6">
+                            <button id="show6">Change te source of the link (jQuery set())</button>
+                            <button id="showlink6">Show the link source(jQuery get())</button>
+                            <a href="https://www.google.com/" id="link6" style="color: blue !important; display: block; ">Linkdwdwdwd</a>
+                            <p id="p6" style="text-align: left; display: block !important;">Lorem ipsum dolor  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsa aliquam magni excepturi, commodi, voluptatum eveniet explicabo possimus error velit ab? Est quas quisquam atque tempora quasi a id repellat? sit amet, consectetur adipisicing elit. Enim maxime culpa quod in labore magnam at suscipit et nesciunt omnis accusantium doloribus distinctio nulla harum incidunt esse, aspernatur unde officia.</p>
+                          </div>
+
+                          <div class="question7"></div>        
+
+
+                          <div class="question8">
+                            <button id="showLocation">Show me the location where i am now</button>
+                             <p class="latitude">latitude</p>
+                             <p class="longitude">longitude</p>
+                          </div>
+
+
+
+                          </div>
+
    
         </div>
     </div>
@@ -243,5 +277,6 @@
 
     <h1>some testing ttest</h1>
     
+    <script src="js/geolocation.js"></script>
 </body>
 </html>
