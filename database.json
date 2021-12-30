@@ -128,7 +128,82 @@
     "bathroom": "1",
     "sqft": "458",
     "email": "zenitneziri@gmail.com"
-}
+},
+ { 
+        "title":"Apartment for Rend",
+        "sourceImage": "../images/slider_img_2.jpg",
+        "address": "429 Barkley Ct, Antioch, TN 37013",
+        "price": "564989",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+
+    ,
+    
+    { 
+        "title":"Apartment for Sale",
+        "sourceImage": "../images/slider_img_3.jpg",
+        "address": "210 Adam Ct, Tomball, TX 77375",
+        "price": "123654",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "zenitneziri@gmail.com"
+    }
+
+    ,
+    
+    { 
+        "title":"House for Sale",
+        "sourceImage": "../images/slider_img_4.jpg",
+        "address": "15735 Braemar Cove Dr, Humble, TX 77346",
+        "price": "456783",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+,
+    { 
+        "title":"Apartment for Rend",
+        "sourceImage": "../images/slider_img_2.jpg",
+        "address": "429 Barkley Ct, Antioch, TN 37013",
+        "price": "564989",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+
+    ,
+    
+    { 
+        "title":"Apartment for Sale",
+        "sourceImage": "../images/slider_img_3.jpg",
+        "address": "210 Adam Ct, Tomball, TX 77375",
+        "price": "123654",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "zenitneziri@gmail.com"
+    }
+
+    ,
+    
+    { 
+        "title":"House for Sale",
+        "sourceImage": "../images/slider_img_4.jpg",
+        "address": "15735 Braemar Cove Dr, Humble, TX 77346",
+        "price": "456783",
+        "room": "5",
+        "bathroom": "1",
+        "sqft": "458",
+        "email": "gentrit.hoxha2001@gmail.com"
+    }
+
+    
 
 
   ]
