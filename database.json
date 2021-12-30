@@ -107,7 +107,29 @@
     "bathroom": "1",
     "sqft": "458",
     "email": "zenitneziri@gmail.com"
+},
+{ 
+    "title":"Apartment for Sale",
+    "sourceImage": "../images/slider_img_3.jpg",
+    "address": "210 Adam Ct, Tomball, TX 77375",
+    "price": "123654",
+    "room": "5",
+    "bathroom": "1",
+    "sqft": "458",
+    "email": "zenitneziri@gmail.com"
+}, 
+
+{ 
+    "title":"Apartment for sale",
+    "sourceImage": "../images/apartment1.jpg",
+    "address": "8133 Leger Dr, Las Vegas, NV 89145",
+    "price": "234000",
+    "room": "2",
+    "bathroom": "1",
+    "sqft": "458",
+    "email": "zenitneziri@gmail.com"
 }
+
 
   ]
 
