@@ -28,10 +28,21 @@ const result = document.getElementById('result');
 
 circleBtn.addEventListener('click', calcCircleArea);
 
-function calcCircleArea() {
-    const radiusValue = parseFloat(radius.value);
-    let rez =  Math.PI * radiusValue * radiusValue;
 
+/**Protype object */
+
+Number.prototype.circleArea = function() {
+    return (Math.pow(this.valueOf(),2)*Math.PI);
+  };
+
+
+  
+
+function calcCircleArea() {
+    const radiusValue = parseInt(radius.value,10);
+  //  let rez =  Math.PI * radiusValue * radiusValue;
+
+  let rez = radiusValue.circleArea();
     rez = Math.ceil(rez);
     radius.textContent  = '';
 

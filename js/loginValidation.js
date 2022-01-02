@@ -10,7 +10,7 @@ loginForm.addEventListener('submit', (e) =>{
      checkPassword();
      console.log(typeof parseInt(loginPassword.value));
      //console.log(`Email: ${loginUsername.value}`);
-     //console.log(`Password: ${loginPassword.value}`);
+     console.log(`Password: ${typeof (loginPassword.value)}`);
 }); 
 
 function checkMail() {
@@ -26,12 +26,24 @@ function checkMail() {
     }
 }
 
+String.prototype.isLengthLowerThan = function(limit) {
+  return this.length < limit;  
+}
+
+console.log("John".isLengthLowerThan(3));
+
+var testpro = "dasdddasdsadsadasdas";
+console.log(testpro.isLengthLowerThan(10));
 
 function checkPassword() {
   const passwordValue = loginPassword.value;
 
   if (passwordValue === "") {
          setErrorFor(loginPassword, "Hapesira e Passwordit eshte e zbrazet"); 
+  }
+
+  else if (passwordValue.isLengthLowerThan(10)) {
+    setErrorFor(loginPassword, "Gjatesia e passwordit duhet te jete me e madhe se 10");
   }
   
   else{
