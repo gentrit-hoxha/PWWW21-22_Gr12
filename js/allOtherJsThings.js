@@ -202,6 +202,6 @@ function tryCatchFunction() {
   }
 
   finally {
-    document.getElementById("tryCatchMessage").value = "Correct Number";
+    document.getElementById("tryCatchMessage").value = "";
   }
 }

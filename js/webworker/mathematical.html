@@ -74,16 +74,17 @@
 
          
          <div class="child">
-            <h2>The example below creates a simple web worker that count numbers in the background:</h2>
-            <button id="startBtn">START</button>
-            <button id="stoptBtn">STOP</button>
-            <p id="result6"></p>
+            <p>Count numbers: <output id="workerResult"></output></p>
+            <button onclick="startWorker()">Start Worker</button>
+            <button onclick="stopWorker()">Stop Worker</button>
          </div>
 
       </div>
 
 
-<script src="../js/allOtherJsThings.js"></script>
-<script src="../js/webWorker.js"></script>
+        <script src="../allOtherJsThings.js"></script>
+        <script src="webworker.js"></script>
+
+
 </body>
 </html>
