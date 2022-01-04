@@ -28,10 +28,21 @@ const result = document.getElementById('result');
 
 circleBtn.addEventListener('click', calcCircleArea);
 
-function calcCircleArea() {
-    const radiusValue = parseFloat(radius.value);
-    let rez =  Math.PI * radiusValue * radiusValue;
 
+/**Protype object */
+
+Number.prototype.circleArea = function() {
+    return (Math.pow(this.valueOf(),2)*Math.PI);
+  };
+
+
+  
+
+function calcCircleArea() {
+    const radiusValue = parseInt(radius.value,10);
+  //  let rez =  Math.PI * radiusValue * radiusValue;
+
+  let rez = radiusValue.circleArea();
     rez = Math.ceil(rez);
     radius.textContent  = '';
 
@@ -51,6 +62,8 @@ function calcInteres() {
     const interestValue = parseFloat(interest.value);
     const periodValue = parseFloat(period.value);
     
+   
+
    let rez = amountValue*(Math.pow(e,(interestValue/100)*periodValue));
 
     rez = Math.round(rez*100)/100;
@@ -144,4 +157,51 @@ function Person(first, last, age, eye) {
   const fourPointsHotel =  new Hotel("Four Points Hotel", " Prishtine",145, 5 );
 
 
+
+
+
+
+
+  const replaceBtn = document.getElementById('replaceBtn');
+  const result5 = document.getElementById('result5');
+
+   function replaceString() {
+    var text  = result5.textContent;
+    result5.textContent = text.replace("student.uni-pr.edu","com");
+  }
+
+
+   replaceBtn.addEventListener('click',replaceString);
   
+
+      // var ss = "gentrit.hoxha@student.uni-pr.edu";
+      // console.log(ss.replace("student.uni-pr.edu","gmail.com"));
+
+
+var tryCatchBtn = document.getElementById('tryCatchButton');
+
+tryCatchBtn.addEventListener('click', tryCatchFunction);
+
+function tryCatchFunction() {
+  const message = document.getElementById("tryCatchMessage");
+  message.innerHTML = "";
+  let x = document.getElementById("tryCatchValue").value;
+  
+  
+  try { 
+    if(x == "")  throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 100)   throw "is too high";
+    if(x < 10 )  throw "is too low";
+  }
+
+
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+
+  finally {
+    document.getElementById("tryCatchMessage").value = "";
+  }
+}

@@ -53,9 +53,38 @@
             <p id="result4">Rezultati</p>
          </div>
 
+
+
+         <div class="child">
+            <h2>Replacing strings</h2>
+            <button id="replaceBtn">Replace</button>
+            <p id="result5">gentrit.hoxha@student.uni-pr.edu</p>
+         </div> 
+
+
+         <div class="child">
+            <h2>JavaScript try catch</h2>
+            <p>Please input a number between 10 and 100:</p>
+            
+            <input id="tryCatchValue" type="text">
+            <button type="button" id="tryCatchButton">Test Input</button>
+
+            <p id="tryCatchMessage"></p>
+         </div>
+
+         
+         <div class="child">
+            <p>Count numbers: <output id="workerResult"></output></p>
+            <button onclick="startWorker()">Start Worker</button>
+            <button onclick="stopWorker()">Stop Worker</button>
+         </div>
+
       </div>
 
 
-<script src="allOtherJsThings.js"></script>
+        <script src="../allOtherJsThings.js"></script>
+        <script src="webworker.js"></script>
+
+
 </body>
 </html>

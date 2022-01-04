@@ -13,6 +13,13 @@
     text-align: center;
 }
 
+.table-part-content{
+  
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
 ul {
     all: unset !important;
 }

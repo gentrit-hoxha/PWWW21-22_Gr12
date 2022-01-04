@@ -48,6 +48,14 @@ function checkProperty() {
     }
 }
 
+/** Prototype */
+
+Number.prototype.isNegative = function() {
+  return this<0;   
+}
+
+
+
 function checkRooms() {
     const propertyRoomValue = propertyRooms.value;
     
@@ -55,7 +63,7 @@ function checkRooms() {
 		setErrorFor(propertyRooms, "Shenoni numrin e dhomave");
     } 
 
-    else if(propertyRoomValue<0){
+    else if(parseInt(propertyRoomValue).isNegative()){
                   setErrorFor(propertyRooms, "Nuk mund te shenoni numer negativ");
     }
    

@@ -34,15 +34,28 @@ function checkfirstName() {
 }
 
 
+var special22 = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/gi;
+var username22 = "gentrit-@";
+
+console.log(username22.match(special22));
+
+
 function checkLastName() {
   const lastNameValue = lastName.value;
+  var special = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/i;
 
+
+  var res = lastNameValue.match(special);
   if (lastNameValue === "") {
          setErrorFor(lastName, "Shenoni mbiemrin tuaj nuk mund ta lini zbrazet"); 
   }
+
+  else if (res==null) {
+    setErrorFor(lastName, "Nuk keni keni karaktere speciale"); 
+  }
   
   else{
-           setSuccessFor(lastName, "Hapesira e Passwordit eshte ne rregull");
+           setSuccessFor(lastName, "Hapesira e Username eshte ne rregull");
   }
   
 }
@@ -53,8 +66,8 @@ function checkMail() {
     if(emailValue === '') {
 		setErrorFor(signUpEmail, "Shenoni emailin ne menyre korrekte, e.g username@domain.com");
     } 
-    else if(!(emailValue.includes(".com")||emailValue.includes(".edu"))){
-      setErrorFor(signUpEmail, "Ju duhet te dhenoni nje domain si: .com, .edu, .gov ose tjera");
+    else if(!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailValue))){
+      setErrorFor(signUpEmail, "Invalid email address");
     }
     else if (emailValue) {
 		setSuccessFor(signUpEmail,"Në Rregull");
@@ -62,12 +75,30 @@ function checkMail() {
 }
 
 
+
+
+
 function checkPassword() {
     const passwordValue1 = signUpPassoword1.value;
   
+
+/**Password length 7
+ * at least uppercase
+ * lowercase
+ * number
+ */
+    var parameter = /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/g;
+    var arr  = parameter.exec(passwordValue1);
+
     if (passwordValue1 === "") {
            setErrorFor(signUpPassoword1, "Hapesira e Passwordit eshte e zbrazet"); 
     }
+
+    else if (arr==null) {
+      setErrorFor(signUpPassoword1, "Paswwordi duhet te permbaj numer, shkronje te vogel dhe te madhe "); 
+    }
+
+
     
     else{
              setSuccessFor(signUpPassoword1, "Hapesira e Passwordit eshte ne rregull");
@@ -142,3 +173,6 @@ function setSuccessFor(input, message) {
      small.textContent = message;
      small.className = 'successMsg yes';
 }
+
+
+console.log(133)
