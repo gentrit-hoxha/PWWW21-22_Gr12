@@ -61,7 +61,7 @@ header {
  height: 35px;
  border-radius: 20px;
  
- color: white;
+ color: black;
  border: none;
 }
 
@@ -102,12 +102,13 @@ align-items: center;
     position: relative;
     top: -2px;
     right: 25px;
+
   }
 
 #search-submit {
    margin-top: 2em;
    background-color: transparent !important;
-   border: none;        
+   border: none;     
 }
 
 .search-div {
