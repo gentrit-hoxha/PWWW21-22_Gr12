@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# 2021-12-25 v1.0.0
+/features.css
+/geolocationMap.js
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /features_application.html
