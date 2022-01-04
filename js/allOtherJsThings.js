@@ -62,6 +62,8 @@ function calcInteres() {
     const interestValue = parseFloat(interest.value);
     const periodValue = parseFloat(period.value);
     
+   
+
    let rez = amountValue*(Math.pow(e,(interestValue/100)*periodValue));
 
     rez = Math.round(rez*100)/100;
@@ -163,14 +165,43 @@ function Person(first, last, age, eye) {
   const replaceBtn = document.getElementById('replaceBtn');
   const result5 = document.getElementById('result5');
 
-function replaceString() {
+   function replaceString() {
     var text  = result5.textContent;
     result5.textContent = text.replace("student.uni-pr.edu","com");
   }
 
 
-replaceBtn.addEventListener('click',replaceString);
+   replaceBtn.addEventListener('click',replaceString);
   
 
-// var ss = "gentrit.hoxha@student.uni-pr.edu";
-// console.log(ss.replace("student.uni-pr.edu","gmail.com"));
+      // var ss = "gentrit.hoxha@student.uni-pr.edu";
+      // console.log(ss.replace("student.uni-pr.edu","gmail.com"));
+
+
+var tryCatchBtn = document.getElementById('tryCatchButton');
+
+tryCatchBtn.addEventListener('click', tryCatchFunction);
+
+function tryCatchFunction() {
+  const message = document.getElementById("tryCatchMessage");
+  message.innerHTML = "";
+  let x = document.getElementById("tryCatchValue").value;
+  
+  
+  try { 
+    if(x == "")  throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 100)   throw "is too high";
+    if(x < 10 )  throw "is too low";
+  }
+
+
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+
+  finally {
+    document.getElementById("tryCatchMessage").value = "Correct Number";
+  }
+}
