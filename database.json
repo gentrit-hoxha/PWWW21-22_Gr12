@@ -67,7 +67,7 @@
   
     { 
         "title":"Apartment for Rent",
-        "sourceImage": "../images/apartment1.jpg",
+        "sourceImage": "../images/newA5.jpg",
         "address": "22515 Acorn Valley Dr, Spring, TX 77389",
         "price": "75486",
         "room": "5",
@@ -78,7 +78,7 @@
     
     { 
     	"title":"Apartment for Rent",
-    	"sourceImage": "../images/apartment1.jpg",
+    	"sourceImage": "../images/newA6.jpg",
     	"address": "22515 Acorn Valley Dr, Spring, TX 77389",
     	"price": "75486",
     	"room": "5",
@@ -89,7 +89,7 @@
 
     { 
     	"title":"Apartment for Rent",
-    	"sourceImage": "../images/apartment1.jpg",
+    	"sourceImage": "../images/newA7.jpg",
     	"address": "22515 Acorn Valley Dr, Spring, TX 77389",
     	"price": "75486",
     	"room": "5",
@@ -99,8 +99,8 @@
     },
 
     { 
-    	"title":"Apartment for Sale",
-    	"sourceImage": "../images/slider_img_3.jpg",
+    	"title":"House for Sale",
+    	"sourceImage": "../images/newH3.jpg",
     	"address": "210 Adam Ct, Tomball, TX 77375",
     	"price": "123654",
     	"room": "5",
@@ -122,7 +122,7 @@
     
     { 
         "title":"Apartment for Rend",
-        "sourceImage": "../images/slider_img_2.jpg",
+        "sourceImage": "../images/newA4.jpg",
         "address": "429 Barkley Ct, Antioch, TN 37013",
         "price": "564989",
         "room": "5",
@@ -133,7 +133,7 @@
     
     { 
         "title":"Apartment for Sale",
-        "sourceImage": "../images/slider_img_3.jpg",
+        "sourceImage": "../images/newA3.jpg",
         "address": "210 Adam Ct, Tomball, TX 77375",
         "price": "123654",
         "room": "5",
@@ -144,7 +144,7 @@
     
     { 
         "title":"House for Sale",
-        "sourceImage": "../images/slider_img_4.jpg",
+        "sourceImage": "../images/newH2.jpg",
         "address": "15735 Braemar Cove Dr, Humble, TX 77346",
         "price": "456783",
         "room": "5",
@@ -155,7 +155,7 @@
     
     { 
         "title":"Apartment for Rend",
-        "sourceImage": "../images/slider_img_2.jpg",
+        "sourceImage": "../images/newA2.jpg",
         "address": "429 Barkley Ct, Antioch, TN 37013",
         "price": "564989",
         "room": "5",
@@ -166,7 +166,7 @@
     
     { 
         "title":"Apartment for Sale",
-        "sourceImage": "../images/slider_img_3.jpg",
+        "sourceImage": "../images/newA1j.jpg",
         "address": "210 Adam Ct, Tomball, TX 77375",
         "price": "123654",
         "room": "5",
@@ -177,7 +177,7 @@
     
     { 
         "title":"House for Sale",
-        "sourceImage": "../images/slider_img_4.jpg",
+        "sourceImage": "../images/newH1.jpg",
         "address": "15735 Braemar Cove Dr, Humble, TX 77346",
         "price": "456783",
         "room": "5",
