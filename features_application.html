@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/team_prices.css">
+        <link rel="stylesheet" href="styles/features.css">
+
+        <!-- Link for the map leaflet-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
         <title>Features of the App</title>
 </head>
 <body>
@@ -106,8 +110,17 @@
               </div>
 
               
-            </div>
+        </div>
     </div>
+
+
+     <div class="map-part">
+       <div class="map-part-content">
+             <h1 style="padding: 1rem;">Where can you find us ?</h1>
+
+             <div id="map" style="height: 400px"></div> 
+       </div>
+     </div>
 
 
 
@@ -118,6 +131,9 @@
             <p>Template by OS Templates</p>
     </div>
 
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./js/geolocationMap.js"></script>
 
 </body>
 </html>

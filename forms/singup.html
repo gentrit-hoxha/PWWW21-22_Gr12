@@ -19,8 +19,10 @@
                         <input type="text" id="firstName" name="firstName" placeholder="Enter your Name" >
                         <small id="small1" class="no">Message Error for the Username</small> 
 
-                        <label id="surname-label" for="surname"><b>Surname:</b></label>
-                        <input type="text" id="surname" name="lastName" placeholder="Enter your Surname" >  
+
+                        <!--Username instead of surname for naming things not anything-->
+                        <label id="surname-label" for="surname"><b>Username:</b></label>
+                        <input type="text" id="surname" name="lastName" placeholder="Enter your Username" >  
                         <small id="small1" class="no">Message Error for the Username</small>     
                         
                         
@@ -41,7 +43,7 @@
 
 
                         <label id="email-label" for="signUpemail"><b>Email:</b></label>
-                        <input type="email" id="signUpemail" name="email" placeholder="Enter a valid mail:" >
+                        <input type="text[[" id="signUpemail" name="email" placeholder="Enter a valid mail:"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> 
                         <small id="small1" class="no">Message Error for the Username</small> 
                     
                         <label id="pasword-label1" for="signUpPassword1">Password:</label><br>

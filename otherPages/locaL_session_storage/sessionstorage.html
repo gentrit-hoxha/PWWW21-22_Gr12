@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Storage </title>
+    <title>Session Storage </title>
     <style>
         *{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -60,6 +60,19 @@
                 <td><input type="text" id="addressPrice" placeholder="Enter the Price" required></td>
             </tr>
     
+
+            <tr>
+                <td><p>Enter datetime when builded</p></td>
+                <td><input type="datetime-local" id="datetime-local" required></td>
+            </tr>
+
+            <tr>
+                <td><p>Enter the URL<p></td>
+                <td><input type="url" id="urll" required ></td>
+            </tr>
+
+
+            
             <tr>
                 <td><p>Enter the Key</p></td>
                 <td><input type="text" id="key" placeholder="Enter the key" required ></td>
@@ -80,7 +93,7 @@
 
         <tr>
             <td><p>Enter key to retrieve item</p></td>
-            <td><input type="text" id="retrieveKey" placeholder="retrieveKey" required</td>
+            <td><input type="text" id="retrieveKey" placeholder="retrieveKey" required> </td>
             
         </tr>
 
@@ -101,17 +114,21 @@
 
     <script>
 
-function store(){ //stores items in the localStorage
+function store(){ //stores items in the session storage
     var address = document.getElementById('addressValue').value;
     var price = document.getElementById('addressPrice').value;
     var key = document.getElementById('key').value;
+    var date = document.getElementById('datetime-local').value;
+    var url = document.getElementById('urll').value;
 
     const house = {
         name: address,
         price: price,
+        date: date,
+        url:  url
     }
 
-    window.localStorage.setItem(key,JSON.stringify(house));  
+    window.sessionStorage.setItem(key,JSON.stringify(house));  
     //converting object to string
 }
 
@@ -119,7 +136,7 @@ function retrieveRecords(){
     var key = document.getElementById('retrieveKey').value; //gets key from user
     console.log("retrive records");
 
-    var records = window.localStorage.getItem(key); //searches for the key in localStorage
+    var records = window.sessionStorage.getItem(key); //searches for the key in sessionStorage
     var paragraph = document.createElement("p");
     var infor = document.createTextNode(records);
     paragraph.appendChild(infor);
@@ -127,9 +144,15 @@ function retrieveRecords(){
     element.appendChild(paragraph);
 }
 
+function removeItem(){ //deletes item from localStorage
+    var key = document.getElementById('removeKey').value; //gets key from user
+    localStorage.removeItem(key) //passes key to the removeItem method
+    console.log("remove items");
+}
 
-function clearStorage(){ //clears the entire localStorage
-    localStorage.clear()
+
+function clearStorage(){ //clears the entire Session Storage
+    sessionStorage.clear()
     console.log("clear records");
 }
 

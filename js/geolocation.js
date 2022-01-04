@@ -2,9 +2,6 @@ const showBtn = document.getElementById('showLocation');
 const longitude = document.querySelector('.longitude');
 const latitude = document.querySelector('.latitude');
 
-
-
-
 function getLocation() {
   
     try {

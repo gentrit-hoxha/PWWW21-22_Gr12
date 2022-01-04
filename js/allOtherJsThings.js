@@ -155,4 +155,22 @@ function Person(first, last, age, eye) {
   const fourPointsHotel =  new Hotel("Four Points Hotel", " Prishtine",145, 5 );
 
 
+
+
+
+
+
+  const replaceBtn = document.getElementById('replaceBtn');
+  const result5 = document.getElementById('result5');
+
+function replaceString() {
+    var text  = result5.textContent;
+    result5.textContent = text.replace("student.uni-pr.edu","com");
+  }
+
+
+replaceBtn.addEventListener('click',replaceString);
   
+
+// var ss = "gentrit.hoxha@student.uni-pr.edu";
+// console.log(ss.replace("student.uni-pr.edu","gmail.com"));
