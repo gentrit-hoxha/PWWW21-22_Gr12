@@ -47,7 +47,7 @@ function checkLastName() {
 
   var res = lastNameValue.match(special);
   if (lastNameValue === "") {
-         setErrorFor(lastName, "Shenoni mbiemrin tuaj nuk mund ta lini zbrazet"); 
+         setErrorFor(lastName, "Shenoni Usernamin tuaj nuk mund ta lini zbrazet"); 
   }
 
   else if (res==null) {
